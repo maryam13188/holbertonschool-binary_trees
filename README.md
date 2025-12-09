@@ -3,9 +3,8 @@
 ## 📖 Description
 This project is a comprehensive implementation of binary tree data structures in C, developed as part of the Holberton School curriculum. The goal is to implement various operations and algorithms related to binary trees, binary search trees, and balanced trees.
 
-
 ## 📁 Project Structure
-```text
+
 binary_trees/
 ├── binary_trees.h
 ├── 0-binary_tree_node.c
@@ -27,9 +26,7 @@ binary_trees/
 ├── 16-binary_tree_is_perfect.c
 ├── 17-binary_tree_sibling.c
 ├── 18-binary_tree_uncle.c
-└── README.
-
-
+└── README.md
 
 ## 📋 File Descriptions
 
