@@ -1,8 +1,9 @@
-# Binary Trees Project
+# Binary Trees
 
 ## 📖 Description
-This project is a comprehensive implementation of binary tree data structures in C, developed as part of the Holberton School curriculum. The goal is to implement various operations and algorithms related to binary trees, binary search trees, and balanced trees
-......
+ data structures where each node has at most two children, enabling efficient data operations and serving as foundational building blocks for advanced algorithms and real-world applications like databases and AI systems.
+
+---
 ## Learning Objectives
 
 * What is a binary tree
@@ -10,12 +11,10 @@ This project is a comprehensive implementation of binary tree data structures in
 * What is the possible gain in terms of time complexity compared to linked lists
 * What are the depth, the height, the size of a binary tree
 * What are the different traversal methods to go through a binary tree
-* What is a complete, a full, a perfect, a balanced binary tree
-.............................
+*  What is a complete, a full, a perfect, a balanced binary tree  
+  ---
 
 ## Requirements  
-
-## General
 
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -29,7 +28,7 @@ This project is a comprehensive implementation of binary tree data structures in
 * The prototypes of all your functions should be included in your header file called binary_trees.h
 * Don’t forget to push your header file
 * All your header files should be include guarded
-..................................
+  ---
 
 ## 📋 File Descriptions
 
@@ -56,15 +55,23 @@ This project is a comprehensive implementation of binary tree data structures in
 | `17-binary_tree_sibling.c` | Function to find the sibling of a node |
 | `18-binary_tree_uncle.c` | Function to find the uncle of a node |
 | `README.md` | Project documentation |
-...
+---
 
 ## 🛠️ Compilation Examples
-
+```
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89
 ./0-node
+```
 
-....
+---
 
+##   Example output:
+```
+Noae : 98
+Left child : 12
+Right child : 402
+
+```
 
 ## Authors
 * Maryam \ roro13188@gmail.com
