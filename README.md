@@ -59,137 +59,137 @@
 
 ## 🎯 Tasks Implementation
 ## Task 0: New node
-Function: binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
+**Function:**  ّbinary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
-Creates a binary tree node
+- Creates a binary tree node
 
-Returns pointer to new node, or NULL on failure
+- Returns pointer to new node, or NULL on failure
 
 ## Task 1: Insert left
-Function: binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
+**Function:** binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 
-Inserts a node as the left-child of another node
+- Inserts a node as the left-child of another node
 
-If parent already has a left-child, new node takes its place
+- If parent already has a left-child, new node takes its place
 
 ## Task 2: Insert right
-Function: binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
+**Function:** binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 
-Inserts a node as the right-child of another node
+- Inserts a node as the right-child of another node
 
-If parent already has a right-child, new node takes its place
+- If parent already has a right-child, new node takes its place
 
 ## Task 3: Delete
-Function: void binary_tree_delete(binary_tree_t *tree)
+**Function:** void binary_tree_delete(binary_tree_t *tree)
 
-Deletes an entire binary tree
+- Deletes an entire binary tree
 
-Uses post-order traversal
+- Uses post-order traversal
 
 ## Task 4: Is leaf
-Function: int binary_tree_is_leaf(const binary_tree_t *node)
+**Function:** int binary_tree_is_leaf(const binary_tree_t *node)
 
-Checks if a node is a leaf
+- Checks if a node is a leaf
 
-Returns 1 if node is a leaf, 0 otherwise
+- Returns 1 if node is a leaf, 0 otherwise
 
 ## Task 5: Is root
-Function: int binary_tree_is_root(const binary_tree_t *node)
+**Function:** int binary_tree_is_root(const binary_tree_t *node)
 
-Checks if a node is a root
+- Checks if a node is a root
 
-Returns 1 if node is a root, 0 otherwise
+- Returns 1 if node is a root, 0 otherwise
 
 ## Task 6: Pre-order traversal
-Function: void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
+**Function:** void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 
-Goes through a binary tree using pre-order traversal
+- Goes through a binary tree using pre-order traversal
 
-Applies function to each node's value
+- Applies function to each node's value
 
 ## Task 7: In-order traversal
-Function: void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
+**Function:** void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 
-Goes through a binary tree using in-order traversal
+- Goes through a binary tree using in-order traversal
 
-Applies function to each node's value
+- Applies function to each node's value
 
 ## Task 8: Post-order traversal
-Function: void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
+**Function:** void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 
-Goes through a binary tree using post-order traversal
+- Goes through a binary tree using post-order traversal
 
-Applies function to each node's value
+- Applies function to each node's value
 
 ## Task 9: Height
-Function: size_t binary_tree_height(const binary_tree_t *tree)
+**Function:** size_t binary_tree_height(const binary_tree_t *tree)
 
-Measures the height of a binary tree
+- Measures the height of a binary tree
 
-Height of NULL tree is 0
+- Height of NULL tree is 0
 
-Height of leaf node is 0
+- Height of leaf node is 0
 
 ## Task 10: Depth
-Function: size_t binary_tree_depth(const binary_tree_t *node)
+**Function:** size_t binary_tree_depth(const binary_tree_t *node)
 
-Measures the depth of a node in a binary tree
+- Measures the depth of a node in a binary tree
 
-Depth of root is 0
+- Depth of root is 0
 
 ## Task 11: Size
-Function: size_t binary_tree_size(const binary_tree_t *tree)
+**Function:** size_t binary_tree_size(const binary_tree_t *tree)
 
-Measures the size of a binary tree
+- Measures the size of a binary tree
 
-Size = number of nodes in tree
+- Size = number of nodes in tree
 
 ## Task 12: Leaves
-Function: size_t binary_tree_leaves(const binary_tree_t *tree)
+**Function:** size_t binary_tree_leaves(const binary_tree_t *tree)
 
-Counts the leaves in a binary tree
+- Counts the leaves in a binary tree
 
-Leaves = nodes with no children
+- Leaves = nodes with no children
 
 ## Task 13: Nodes
-Function: size_t binary_tree_nodes(const binary_tree_t *tree)
+**Function:** size_t binary_tree_nodes(const binary_tree_t *tree)
 
-Counts the nodes with at least 1 child in a binary tree
+- Counts the nodes with at least 1 child in a binary tree
 
 ## Task 14: Balance factor
-Function: int binary_tree_balance(const binary_tree_t *tree)
+**Function:** int binary_tree_balance(const binary_tree_t *tree)
 
-Measures the balance factor of a binary tree
+- Measures the balance factor of a binary tree
 
-Balance factor = height(left) - height(right)
+- Balance factor = height(left) - height(right)
 
 ## Task 15: Is full
-Function: int binary_tree_is_full(const binary_tree_t *tree)
+**Function:** int binary_tree_is_full(const binary_tree_t *tree)
 
-Checks if a binary tree is full
+- Checks if a binary tree is full
 
-Full tree: every node has 0 or 2 children
+- Full tree: every node has 0 or 2 children
 
 ## Task 16: Is perfect
-Function: int binary_tree_is_perfect(const binary_tree_t *tree)
+**Function:** int binary_tree_is_perfect(const binary_tree_t *tree)
 
-Checks if a binary tree is perfect
+- Checks if a binary tree is perfect
 
-Perfect tree: all levels completely filled
+- Perfect tree: all levels completely filled
 
 ## Task 17: Sibling
-Function: binary_tree_t *binary_tree_sibling(binary_tree_t *node)
+**Function:** binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 
-Finds the sibling of a node
+- Finds the sibling of a node
 
-Returns pointer to sibling node, or NULL
+- Returns pointer to sibling node, or NULL
 
 ## Task 18: Uncle
-Function: binary_tree_t *binary_tree_uncle(binary_tree_t *node)
+**Function:** binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 
-Finds the uncle of a node
+- Finds the uncle of a node
 
-Returns pointer to uncle node, or NULL
+- Returns pointer to uncle node, or NULL
 
 
 
@@ -201,14 +201,8 @@ gcc -Wall -Wextra -Werror -pedantic -std=gnu89
 
 ---
 
-##   Example output:
-```
-Noae : 98
-Left child : 12
-Right child : 402
-
-```
 ## 📊 Project Output
+
 
 ## Expected Output Examples
 
