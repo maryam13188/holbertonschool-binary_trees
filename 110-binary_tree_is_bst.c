@@ -1,7 +1,8 @@
 #include "binary_trees.h"
+#include <limits.h>
 
 /**
- * is_bst_helper - Helper function to check BST property recursively
+ * is_bst_helper - Helper function to check BST property
  * @tree: Pointer to current node
  * @min: Minimum allowed value
  * @max: Maximum allowed value
