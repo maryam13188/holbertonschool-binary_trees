@@ -8,31 +8,42 @@
  */
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
-	const binary_tree_t *q[1000];
-	int front = 0, back = 0, flag = 0;
+	const binary_tree_t *q[1024];
+	int f = 0, r = 0;
+	int empty_spot = 0;
 
-	if (!tree)
+	if (tree == NULL)
 		return (0);
 
-	q[back++] = tree;
+	q[r++] = tree;
 
-	while (front < back)
+	while (f < r)
 	{
-		const binary_tree_t *node = q[front++];
+		const binary_tree_t *node = q[f++];
 
-		if (!node->left)
-			flag = 1;
-		else if (flag)
-			return (0);
+		/* Check left child */
+		if (node->left == NULL)
+		{
+			empty_spot = 1;
+		}
 		else
-			q[back++] = node->left;
+		{
+			if (empty_spot)
+				return (0);
+			q[r++] = node->left;
+		}
 
-		if (!node->right)
-			flag = 1;
-		else if (flag)
-			return (0);
+		/* Check right child */
+		if (node->right == NULL)
+		{
+			empty_spot = 1;
+		}
 		else
-			q[back++] = node->right;
+		{
+			if (empty_spot)
+				return (0);
+			q[r++] = node->right;
+		}
 	}
 
 	return (1);
