@@ -10,25 +10,25 @@
  */
 bst_t *bst_search(const bst_t *tree, int value)
 {
-    /* If tree is NULL, return NULL */
-    if (tree == NULL)
-        return (NULL);
+	/* If tree is NULL, return NULL */
+	if (tree == NULL)
+		return (NULL);
 
-    /* Traverse the tree */
-    while (tree != NULL)
-    {
-        /* If value found at current node */
-        if (value == tree->n)
-            return ((bst_t *)tree);
+	/* Traverse the tree */
+	while (tree != NULL)
+	{
+		/* If value found at current node */
+		if (value == tree->n)
+			return ((bst_t *)tree);
 
-        /* If value is less than current node's value, go left */
-        if (value < tree->n)
-            tree = tree->left;
-        /* If value is greater than current node's value, go right */
-        else
-            tree = tree->right;
-    }
+		/* If value is less than current node's value, go left */
+		if (value < tree->n)
+			tree = tree->left;
+		/* If value is greater than current node's value, go right */
+		else
+			tree = tree->right;
+	}
 
-    /* Value not found in the tree */
-    return (NULL);
+	/* Value not found in the tree */
+	return (NULL);
 }
