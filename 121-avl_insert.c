@@ -7,11 +7,13 @@
  */
 int height(const binary_tree_t *tree)
 {
+    int left_height, right_height;
+    
     if (tree == NULL)
         return (0);
     
-    int left_height = height(tree->left);
-    int right_height = height(tree->right);
+    left_height = height(tree->left);
+    right_height = height(tree->right);
     
     return (1 + (left_height > right_height ? left_height : right_height));
 }
@@ -34,9 +36,15 @@ int max(int a, int b)
  */
 int get_balance(const avl_t *node)
 {
+    int left_height, right_height;
+    
     if (node == NULL)
         return (0);
-    return (height(node->left) - height(node->right));
+    
+    left_height = height(node->left);
+    right_height = height(node->right);
+    
+    return (left_height - right_height);
 }
 
 /**
@@ -51,6 +59,7 @@ avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent,
                            avl_t **new_node, int value)
 {
     int balance;
+    avl_t *new_root;
     
     if (*tree == NULL)
     {
@@ -99,7 +108,8 @@ avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent,
     if (balance < -1 && value < (*tree)->right->n)
     {
         (*tree)->right = binary_tree_rotate_right((*tree)->right);
-        return binary_tree_rotate_left(*tree);
+        new_root = binary_tree_rotate_left(*tree);
+        return new_root;
     }
     
     return (*tree);
